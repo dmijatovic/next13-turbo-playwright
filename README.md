@@ -1,6 +1,10 @@
 # Next 13 and Playwright
 
-## Installation Playwright
+## Playwright
+
+End-to-end testing tool.
+
+### Instalation Playwright
 
 ```bash
 # install Playwright test
@@ -9,11 +13,34 @@ npm i -D @playwright/test
 npx playwright install
 ```
 
-## Remarks playwright
+### Remarks Playwright
 
 Base folder is `tests` in the root. To change settings create [playwright.config.ts file](https://playwright.dev/docs/test-configuration#basic-options)
 
-## Remarks Next 13 Turbo
+### Selectors
+
+All CSS selectors plus select by text value and Xpath support
+
+```typescript
+// click on button with text value
+await page.click("tekst=some text")
+// CSS selectors
+await page.click("button")
+await page.click("#id")
+await page.click(".class")
+// only visible button
+await page.click("button:visible")
+
+// combination -> button with myId and myClass
+await page.click("buitton #myId .myClass)
+
+```
+
+### Inputs
+
+## Next 13 Turbo
+
+### Instalation next 13
 
 ```bash
 # use wizz
@@ -29,9 +56,11 @@ npm install next@latest react@latest react-dom@latest eslint-config-next@latest
 
 ```
 
+## Vercel readme
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+### Getting Started
 
 First, run the development server:
 
@@ -49,7 +78,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -58,7 +87,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
