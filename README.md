@@ -1,3 +1,34 @@
+# Next 13 and Playwright
+
+## Installation Playwright
+
+```bash
+# install Playwright test
+npm i -D @playwright/test
+# install browsers
+npx playwright install
+```
+
+## Remarks playwright
+
+Base folder is `tests` in the root. To change settings create [playwright.config.ts file](https://playwright.dev/docs/test-configuration#basic-options)
+
+## Remarks Next 13 Turbo
+
+```bash
+# use wizz
+npx create-next-app@latest --experimental-app
+
+```
+
+- manual installation
+
+```bash
+# manual install of latest next (13)
+npm install next@latest react@latest react-dom@latest eslint-config-next@latest
+
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

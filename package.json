@@ -1,12 +1,15 @@
 {
-  "name": "turbo",
-  "version": "0.1.0",
+  "name": "next-turbo-playwright",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "e2e":"playwright test",
+    "e2e:visible":"playwright test --headed",
+    "e2e:visible:ff":"playwright test --headed --browser=firefox"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -18,5 +21,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.8.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
   }
 }
